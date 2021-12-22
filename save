@@ -5,7 +5,9 @@ REPBASE=${REPURL%/*}
 REPBASEDIR=${REPBASE##*/}
 REPDIR=${REPURL##*/}
 
-mkdir $REPBASEDIR
+if [ ! -e "$REPBASEDIR" ]; then
+    mkdir $REPBASEDIR
+fi
 
 git clone $1 $REPBASEDIR/$REPDIR
 
