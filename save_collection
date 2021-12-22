@@ -1,0 +1,4 @@
+echo "Feel free to add repositories to collection.txt (seeing example.txt)"
+echo "Saving..."
+./save_by_list collection.txt
+echo "Done"
