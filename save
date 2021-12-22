@@ -1,3 +1,11 @@
 #!/bin/bash
 
-git clone $1
+REPURL=$1
+REPBASE=${REPURL%/*}
+REPBASEDIR=${REPBASE##*/}
+REPDIR=${REPURL##*/}
+
+mkdir $REPBASEDIR
+
+git clone $1 $REPBASEDIR/$REPDIR
+
