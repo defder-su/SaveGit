@@ -13,6 +13,8 @@
 
 Install `git`.
 
+Install [jq](https://stedolan.github.io/jq/download/).
+
 Create a folder where you want your repositories downloaded in a drive where you have enough space available.
 
 Open a terminal in the folder and run `chmod +x save*`.
