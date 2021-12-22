@@ -1,4 +1,4 @@
-# SaveGit
+<h1 align="center">SaveGit</h1>
 
 <p align="center">The collection of scripts for git.</p>
 
