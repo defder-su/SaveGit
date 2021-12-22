@@ -11,9 +11,7 @@
 
 ## Installation (Linux, macOS):
 
-Install `git`.
-
-Install [jq](https://stedolan.github.io/jq/download/).
+Install `git`, `curl`, [jq](https://stedolan.github.io/jq/download/).
 
 Create a folder where you want your repositories downloaded in a drive where you have enough space available.
 
@@ -35,6 +33,9 @@ Open a terminal in the folder and run `./save` or other script with arguments.
 
 ### Save a new repo:
 `./save https://github.com/defder-su/SaveSites.git`
+
+### Save GitHub user's repos:
+`./save https://github.com/defder-su`
 
 ### Save list:
 `./save_by_list example.txt`
