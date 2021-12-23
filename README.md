@@ -12,7 +12,7 @@
 
 ## Installation (Linux, macOS):
 
-Install `git`, `curl`, [jq](https://stedolan.github.io/jq/download/).
+Install `git`, `curl` and [jq](https://stedolan.github.io/jq/download/).
 
 Create a folder where you want your repositories downloaded in a drive where you have enough space available.
 
