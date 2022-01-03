@@ -22,5 +22,5 @@ else
     if [ ! -e "$REPBASEDIR" ]; then
 	mkdir $REPBASEDIR
     fi
-    git clone $1 $REPBASEDIR/$REPDIR
+    git clone --no-checkout $1 $REPBASEDIR/$REPDIR
 fi

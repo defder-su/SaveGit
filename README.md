@@ -50,7 +50,7 @@ Open a terminal in the folder and run `./save` or other script with arguments.
 
 ## TODO:
 
-Updating resaved repositories (using `git fetch` and `git pull`), updating all saved with a command like `./save_updates`.
+Updating resaved repositories (using `git fetch`), updating all saved with a command like `./save_updates`.
 
 ---
 
