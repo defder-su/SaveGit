@@ -52,6 +52,8 @@ Open a terminal in the folder and run `./save` or other script with arguments.
 
 Updating resaved repositories (using `git fetch` and `git pull`), updating all saved with a command like `./save_updates`.
 
+How to save related data like issues, pull requests etc.? See [thread](https://stackoverflow.com/questions/41369365/how-can-i-export-github-issues-to-excel).
+
 ---
 
 ## Related Projects:
