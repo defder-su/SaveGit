@@ -54,6 +54,8 @@ Updating resaved repositories (using `git fetch` and `git pull`), updating all s
 
 How to save related data like issues, pull requests etc.? See [thread](https://stackoverflow.com/questions/41369365/how-can-i-export-github-issues-to-excel).
 
+Clone into other folder, if folder already exists.
+
 ---
 
 ## Related Projects:
