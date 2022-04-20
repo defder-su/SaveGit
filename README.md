@@ -16,8 +16,6 @@ Install `git`, `curl` and [jq](https://stedolan.github.io/jq/download/).
 
 Create a folder where you want your repositories downloaded in a drive where you have enough space available (recommended a small cluster size).
 
-Open a terminal in the folder and run `chmod +x save*`.
-
 ---
 
 ## Installation (Windows):
