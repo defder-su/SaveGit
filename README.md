@@ -12,7 +12,7 @@
 
 ## Installation (Linux, macOS):
 
-Install `git`, `curl` and [jq](https://stedolan.github.io/jq/download/).
+Install `git`, `curl`, [jq](https://stedolan.github.io/jq/download/) and [MiceWeb](https://github.com/Robotizing/MiceWeb/).
 
 Create a folder where you want your repositories downloaded in a drive where you have enough space available (recommended a small cluster size).
 
@@ -34,7 +34,7 @@ Open a terminal in the folder and run `./save` or other script with arguments.
 `./save https://github.com/defder-su/SaveSites.git`
 
 ### Save GitHub user's repos:
-`./save https://github.com/ipfs`
+`./save https://github.com/defder-su`
 
 ### Save list:
 `./save_by_list example.txt`

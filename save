@@ -14,13 +14,22 @@ then
     type -P jq &>/dev/null && ISINST=1 || ISINST=0
     if [ $ISINST -eq 0 ]
     then
-	echo "To save all GitHub user's repos install jq from https://stedolan.github.io/jq/download"
-	exit 127
+        echo "To save all GitHub user's repos install jq from https://stedolan.github.io/jq/download"
+        exit 127
     fi
     curl -s "https://api.github.com/users/$REPDIR/repos" | jq '.[].clone_url' | xargs -L1 ./save
 else
     if [ ! -e "$REPBASEDIR" ]; then
-	mkdir $REPBASEDIR
+        mkdir $REPBASEDIR
     fi
     git clone --config http.sslVerify=false --recurse-submodules $1 $REPBASEDIR/$REPDIR
+    type -P miceweb &>/dev/null && ISINST=1 || ISINST=0
+    if [ $ISINST -eq 1 ]
+    then
+        URL=${@%/}
+        URL=${@%.git}
+        miceweb save urls - <<< "$(echo $URL ; echo $URL/issues ; echo $URL/pulls)"
+    else
+        >&2 echo "Error: miceweb is not installed (seeing https://github.com/Robotizing/MiceWeb/)"
+    fi
 fi
