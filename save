@@ -18,6 +18,14 @@ then
         exit 127
     fi
     curl -s "https://api.github.com/users/$REPDIR/repos" | jq '.[].clone_url' | xargs -L1 ./save
+    type -P miceweb &>/dev/null && ISINST=1 || ISINST=0
+    if [ $ISINST -eq 1 ]
+    then
+        URL=${@%/}
+        miceweb save urls - <<< "$(echo $URL ; echo $URL?tab=repositories ; echo $URL?tab=stars)"
+    else
+        >&2 echo "Error: miceweb is not installed (seeing https://github.com/Robotizing/MiceWeb/)"
+    fi
 else
     if [ ! -e "$REPBASEDIR" ]; then
         mkdir $REPBASEDIR
