@@ -62,7 +62,7 @@ Clone repositories into subfolders.
 
 - [SaveMedia](https://github.com/defder-su/SaveMedia)
 
-- [RatBrowser](https://ratbrowser.com)
+- [RatBrowser](http://ratbrowser.com)
 
 - [IPFS](https://ipfs.io)
 
@@ -72,4 +72,4 @@ Clone repositories into subfolders.
 
 ## Contact:
 
-You are welcome in [Defder.info](https://defder.info).
+You are welcome in [Defder.info](http://defder.name).
