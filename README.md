@@ -68,8 +68,3 @@ Clone repositories into subfolders.
 
 - [ZeroNet](https://zeronet.dev)
 
----
-
-## Contact:
-
-You are welcome in [Defder.info](http://defder.name).
