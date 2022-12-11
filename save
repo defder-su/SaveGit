@@ -22,7 +22,6 @@ then
     if [ $ISINST -eq 1 ]
     then
         URL=${@%/}
-	    URL=${URL%?}
 	    URL=${URL%.git}
         miceweb save urls - <<< "$(echo $URL ; echo $URL?tab=repositories ; echo $URL?tab=stars)"
     else
@@ -37,7 +36,6 @@ else
     if [ $ISINST -eq 1 ]
     then
         URL=${@%/}
-        URL=${URL%?}
         URL=${URL%.git}
         miceweb save urls - <<< "$(echo $URL ; echo $URL/issues ; echo $URL/pulls)"
     else
