@@ -30,8 +30,8 @@ else
     if [ ! -e "$REPBASEDIR" ]; then
         mkdir $REPBASEDIR
     fi
-    URL=${REPURL%?}
-    git clone --config http.sslVerify=false --recurse-submodules $URL $REPBASEDIR/${REPDIR%?}
+    URL=${REPURL%\?}
+    git clone --config http.sslVerify=false --recurse-submodules $URL $REPBASEDIR/${REPDIR%\?}
     type -P miceweb &>/dev/null && ISINST=1 || ISINST=0
     if [ $ISINST -eq 1 ]
     then
