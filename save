@@ -21,7 +21,7 @@ then
     if [ $ISINST -eq 1 ]
     then
         URL=${REPURL%.git}
-        miceweb save urls - <<< "$(echo $URL ; echo $URL?tab=repositories ; echo $URL?tab=stars)"
+        miceweb save urls - <<< "$(echo $URL ; echo $URL?tab=repositories ; echo $URL?tab=stars ; echo $URL?tab=following ; echo $URL?tab=followers)"
     else
         >&2 echo "Error: miceweb is not installed (seeing https://github.com/Robotizing/MiceWeb/)"
     fi
